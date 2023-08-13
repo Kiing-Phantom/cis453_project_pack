@@ -1,0 +1,207 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding-bottom: 60px;
+    background-color: #272829;
+    & a {
+        float: left;
+        display: block;
+        color: #272829;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    & img {
+        width: 75px;
+        height: 100px;
+    }
+    /* Style the search box inside the navigation bar */
+    & input[type=text] {
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+    }
+    & .search-container button {
+        float: none;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #FFFFFF;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    & .search-container button:hover {
+        background: #ccc;
+    }
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #272829;
+
+    & .search-container button {
+        float: none;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        background-color: #fff;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+    & .search-container button:hover {
+        background: #ccc;
+    }
+}
+.rightnav {
+    float: right;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #272829;
+
+    & a {
+        float: right;
+        display: block;
+        color: #272829;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+        font-size: 17px;
+    }
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+    height: auto;
+    padding: 15px;
+    }
+
+.row.content {height:auto;} 
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #272829;
+    color: #FFF6E0;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.acctbtn {
+    background-color: #272829;
+    color: #FFF6E0;
+    padding: 16px;
+    font-size: 16px;
+    border-color: #FFF6E0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    /* Links inside the dropdown */
+    & a {
+        color: black;
+        padding: 12px 28px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    & a:hover {
+        background-color: #ddd;
+    }
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #000000;}
+
+select { 
+    position: relative;
+    display: inline-block;
+}
+
+option {
+    display: block;
+    position: absolute;
+    background-color: #272829;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ul.header {
+    padding: 0;
+
+    & li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+
+        & a {
+            background-color: #272829;
+            color: #fff6e0;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+    }
+    
+}
+
+.content {
+    background-color: #D8D9DA;
+    color: black;
+    padding: 20px;
+
+    & h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    & li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+.content {
+    background-color: #D8D9DA;
+    color: black;
+    padding: 20px;
+
+    & h2 {
+        font-size: 48px;
+        padding: 0;
+        margin: 0;
+    }
+
+    & ul {
+        background: #272829;
+    }
+
+    & li {
+        background: #D8D9DA;
+        color: #272829;
+        margin-bottom: 10px;
+        border: black;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    li {
+        font-size:16px;
+    }
+}
