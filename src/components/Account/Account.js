@@ -8,25 +8,25 @@ export default function Account({firstName, lastName, email, street, city, state
         <>
             <div className="rectangle">
                 <ul>
-                    <li className='title'>Name: {firstName} {lastName}</li>
+                    <li className='name'>Name: {firstName} {lastName}</li>
                     <br></br>
-                    <li className='format'> E-Mail: {email}</li>
+                    <li className='email'> E-Mail: {email}</li>
                     <br></br>
-                    <li className='condition'> Address: {street}, {city}, {state}</li>
+                    <li className='address'> Address: {street}, {city}, {state}</li>
                 </ul>
             </div>
             <div className='rectangle2'>
                 <ul>
-                    <li className='album'> Social: {social}</li>
+                    <li className='social'> Social: {social}</li>
                 </ul>
             </div>
             <div className='rectangle3'>
                 <ul>
-                    <li className='artist'> # of Completed Purchases: {purchases}</li>
+                    <li className='purchases'> # of Completed Purchases: {purchases}</li>
                 </ul>
                 <br></br>
                 <ul>
-                    <li className='seller'> # of Completed Sells: {sells}</li>
+                    <li className='sells'> # of Completed Sells: {sells}</li>
                 </ul>
             </div>
             <div className='rectangle4'>

@@ -27,14 +27,7 @@ ul {
     display: inline;
 }
 
-.listingimg {
-    float: left;
-    width: 120px;
-    height: 150px;
-    margin-right:20px;
-}
-
-.title, .artist, .album, .seller, .format, .price, .condition, .bidbuy{
+.name, .email, .address, .social, .purchases, .sells{
     font-weight: bold;
     font-size: 16px;
 }
@@ -44,17 +37,13 @@ ul {
         width:100px;
     }
 
-    .title, .artist, .album, .seller, .format, .price, .condition, .bidbuy {
+    .name, .email, .address, .social, .purchases, .sells {
         font-weight: normal;
         font-size: 16px;
         text-align:justify;
     }
 
-    .format, .condition, .bidbuy, .album {
+    .address {
         display:none;
-    }
-
-    .listingimg {
-        display: none;
     }
 }
