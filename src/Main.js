@@ -7,6 +7,7 @@ import Genres from "./components/Genres/Genres";
 import Formats from "./components/Formats/Formats";
 import Navbar from "./components/NavBar/Navbar";
 import Home from "./components/Home/Home";
+import Account from "./components/Account/Account";
 import art from "./components/CoverArt/metallicaNEM.jpg";
 
 let props = {
@@ -21,6 +22,18 @@ let props = {
     bidbuy: "Buy"
   }
 
+let aprops = {
+    firstName: "Richard", 
+    lastName: "Pack", 
+    email: "ricpac4651@students.ecpi.edu", 
+    street: "1400 Lane Rd", 
+    city: "Lincolnton", 
+    state: "NC", 
+    social: "LinkedIn @ Richard Pack", 
+    purchases: "1", 
+    sells: "0"
+}
+
 class Main extends Component {
     render() {
         return (
@@ -32,6 +45,7 @@ class Main extends Component {
                         <Route path="/genres" element={<Genres />}/>
                         <Route path="/formats" element={<Formats />}/>
                         <Route path="/listings" element={<Listing {...props}/>}/>
+                        <Route path="/account" element={<Account {...aprops}/>}/>
                     </Routes>
                 </div>
             </HashRouter>

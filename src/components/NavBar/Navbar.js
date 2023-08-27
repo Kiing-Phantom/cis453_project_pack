@@ -18,6 +18,9 @@ export class Navbar extends Component {
                                 <li><NavLink to="/genres" class="navLink">Genres</NavLink></li>
                                 <li><NavLink to="/formats" class="navLink">Formats</NavLink></li>
                                 <li><NavLink to="/listings" class="navLink">Listings</NavLink></li>
+                                <div class="rightnav">
+                                    <li><NavLink to="/account" class="navLink">My Account</NavLink></li>
+                                </div>
                             </ul>
                         </ul>
                     </div>
